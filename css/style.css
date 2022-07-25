@@ -1,0 +1,448 @@
+/* =============== USTAWIENIA OGOLNE =============== */
+* {
+  margin: 0px;
+}
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--black-text);
+  background-color: var(--main-white);
+}
+:root {
+  --main-white: #ffffff;
+  --slogan-background: #2f303a;
+  --black-text: #212121;
+  --grey-background: #f5f4fa;
+  --gery-text: #757575;
+  --webstudio-blue: #2196f3;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.section {
+  padding-top: 94px;
+}
+.padding-bottom {
+  padding-bottom: 94px;
+}
+
+/* ====================== NAGŁÓWKI ================= */
+
+h1 {
+  max-width: 700px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white);
+}
+
+h2 {
+  padding-right: 93px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: #000;
+}
+
+h3 {
+  padding-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-text);
+}
+h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+
+  color: var(--black-text);
+}
+h5 {
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+
+  letter-spacing: 0.06em;
+
+  color: var(--black-text);
+}
+
+/* ====================== LOGO ================= */
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: #000;
+}
+.logo-blue {
+  color: var(--webstudio-blue);
+}
+.logo-white {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  color: var(--main-white);
+}
+/* ====================== NAWIGACJA ================= */
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+}
+.bottom-border {
+  border-bottom: 1px solid #ececec;
+}
+.header-bar {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.head-clickers {
+  display: flex;
+}
+.head-clickers li:not(:last-child) {
+  padding-right: 23px;
+}
+.head-clickers li:not(:first-child) {
+  padding-left: 23px;
+}
+.head-clickers a {
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+}
+.mail-tel-a:hover,
+.mail-tel-a:focus,
+address a:hover,
+address a:focus,
+.head-clickers a:hover,
+.head-clickers a:focus {
+  color: var(--webstudio-blue);
+  fill: var(--webstudio-blue);
+}
+
+.mail-tel-li {
+  padding-left: 30px;
+}
+.mail-tel {
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mail-tel-a {
+  display: flex;
+  align-items: center;
+  color: var(--gery-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  fill: var(--gery-text);
+}
+.mail-tel-a svg {
+  margin-right: 10px;
+}
+
+/* ====================== SLOGAN ================= */
+.slogan {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/slogan-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px auto;
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+}
+
+.slogan-paddings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button {
+  padding: 10px 41px;
+  margin-top: 30px;
+
+  border: none;
+
+  background: var(--webstudio-blue);
+  color: var(--main-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+/* ====================== LOREM IPSUM ================= */
+.lorem-ipsum-section ul {
+  display: flex;
+  gap: 30px;
+}
+
+.lorem-ipsum-section h6 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+.lorem-ipsum-section p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--gery-text);
+}
+.background-item {
+  background-color: var(--grey-background);
+  border-radius: 4px;
+}
+/* ====================== CO ROBIMY ================= */
+.what-we-do li {
+  display: inline-block;
+}
+.photos {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ====================== LUDZIE ================= */
+.our-team {
+  background-color: var(--grey-background);
+}
+.people {
+  display: flex;
+  justify-content: space-between;
+}
+.people-box {
+  padding-bottom: 30px;
+  display: inline-block;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team p {
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--gery-text);
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px 0 32px;
+}
+/* .social-links li {padding-right: 10px;} */
+.round-social-links {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  fill: #afb1b8;
+}
+.round-social-links:hover,
+.round-social-links:focus {
+  background-color: var(--webstudio-blue);
+  fill: var(--main-white);
+}
+
+/* ====================== NASI KLIENCI ================= */
+
+.our-customers {
+  display: flex;
+  justify-content: space-between;
+}
+.our-customers-icon {
+  outline: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+.our-customers-icon:focus,
+.our-customers-icon:hover {
+  outline: 1px solid var(--webstudio-blue);
+  fill: var(--webstudio-blue);
+}
+
+/* ====================== STOPKA ================= */
+
+.footer-main {
+  background-color: var(--slogan-background);
+}
+.footer-main-inside {
+  display: flex;
+}
+address p {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: var(--main-white);
+}
+address ul {
+  padding-bottom: 60px;
+}
+address a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-padding {
+  padding-top: 9px;
+}
+.join-us {
+  padding-top: 72px;
+  padding-left: 70px;
+}
+.join-us p {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-white);
+}
+.join-us-links {
+  display: flex;
+}
+.join-us-links li {
+  padding-right: 10px;
+}
+.round-join-us-links {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  fill: var(--main-white);
+}
+.round-join-us-links:hover,
+.round-join-us-links:focus {
+  background-color: var(--webstudio-blue);
+}
+
+/* =================== PORTFOLIO ================= 
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================*/
+
+.portfolio-buttons {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.portfolio-buttons li {
+  padding-right: 8px;
+}
+.portfolio-buttons button {
+  padding: 6px 22px 6px 22px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.portfolio-buttons button:hover,
+.portfolio-buttons button:focus {
+  background-color: var(--webstudio-blue);
+  color: var(--main-white);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-box ul {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.portfolio-box li {
+  flex-basis: calc((100% - 90px) / 3);
+  background: var(--main-white);
+}
+.portfolio-box p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--gery-text);
+}
+.portfolio-box figcaption {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.portfolio-box figure:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
