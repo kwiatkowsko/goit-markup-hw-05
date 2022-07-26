@@ -26,7 +26,7 @@
             >
             <nav>
               <ul class="head-clickers">
-                <li>
+                <li class="active">
                   <a href="/agencja">Agencja</a>
                 </li>
                 <li>
@@ -66,7 +66,9 @@
         <div class="container">
           <div class="slogan-paddings">
             <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button type="button" class="main-button">Zamów usługę</button>
+            <button type="button" class="main-button" data-modal-open>
+              Zamów usługę
+            </button>
           </div>
         </div>
       </section>
@@ -145,8 +147,9 @@
             <li>
               <figure class="photos-inside">
                 <img
+                  class="no-gap"
                   src="images/fancy_graphics/img3.jpg"
-                  alt="ręce obsługujące tablet graficzny"
+                  alt="osoba pisząca na klawiaturze testy pokrycia aplikacji"
                   width="370"
                   height="294"
                 />
@@ -158,6 +161,7 @@
             <li>
               <figure class="photos-inside">
                 <img
+                  class="no-gap"
                   src="images/fancy_graphics/img2.jpg"
                   alt="osoba trzyma telefon i wybiera interfejs graficzny na ekranie laptopa"
                   width="370"
@@ -169,8 +173,9 @@
             <li>
               <figure class="photos-inside">
                 <img
+                  class="no-gap"
                   src="images/fancy_graphics/img1.jpg"
-                  alt="osoba pisząca na klawiaturze testy pokrycia aplikacji"
+                  alt="dłonie obsługujące tablet graficzny"
                   width="370"
                   height="294"
                 />
@@ -190,6 +195,7 @@
             <li class="people-box">
               <figure class="people-padding">
                 <img
+                  class="no-gap"
                   src="images/people/img12.jpg"
                   alt="Uśmiechnięty mężczyzna w okularach"
                   width="270"
@@ -234,6 +240,7 @@
             <li class="people-box">
               <figure>
                 <img
+                  class="no-gap"
                   src="images/people/img13.jpg"
                   alt="Uśmiechnięta kobieta w okularach"
                   width="270"
@@ -278,6 +285,7 @@
             <li class="people-box">
               <figure>
                 <img
+                  class="no-gap"
                   src="images/people/img14.jpg"
                   alt="Uśmiechnięty mężczyzna w koszuli"
                   width="270"
@@ -322,6 +330,7 @@
             <li class="people-box">
               <figure>
                 <img
+                  class="no-gap"
                   src="images/people/img15.jpg"
                   alt="Portret mężczyzny w okularach i T-shirtcie"
                   width="270"
@@ -502,5 +511,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="blabla">
+        <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>x</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
