@@ -123,14 +123,12 @@ h5 {
   border-bottom: 1px solid #ececec;
 }
 .header-bar {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   display: flex;
   justify-content: space-between;
 }
 .head-clickers {
   display: flex;
+  margin: 32px auto;
 }
 .active {
   position: relative;
