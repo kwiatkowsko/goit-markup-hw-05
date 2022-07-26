@@ -547,10 +547,6 @@ address a {
   padding-top: 8px;
   padding-right: 8px;
   z-index: 3;
-  /* animation-name: modalAnimation;
-  animation-duration: 3000ms;
-  animation-timing-function: linear; */
-
 }
 .close-btn {
   display: flex;
@@ -566,9 +562,16 @@ address a {
   border-radius: 50%;
   cursor: pointer;
 }
-/* @keyframes modalAnimation {
-  0% {transform: scale(0.5);
+.animation {
+  animation-name: modalAnimation;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+}
+@keyframes modalAnimation {
+  0% {
+    transform: scale(0.5);
   }
-  100% {transform: scale(1);
+  100% {
+    transform: scale(1);
   }
-} */
+}
