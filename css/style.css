@@ -257,6 +257,11 @@ address a:focus,
 .background-item {
   background-color: var(--grey-background);
   border-radius: 4px;
+  min-height: 120px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ====================== CO ROBIMY ================= */
 .what-we-do li {
@@ -319,34 +324,50 @@ address a:focus,
 }
 
 .round-social-links {
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+
   fill: #afb1b8;
 }
-.round-social-links:hover,
-.round-social-links:focus {
+.social-links-link:hover,
+.social-links-link:focus {
   background-color: var(--webstudio-blue);
-  fill: var(--main-white);
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* ====================== NASI KLIENCI ================= */
-
-.our-customers {
+.social-links-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
+}
+.social-links-link:hover svg {
+  fill: var(--main-white);
+}
+/* ====================== NASI KLIENCI ================= */
+.our-customers-icon svg {
+  width: 106px;
+  height: 60px;
 }
 .our-customers-icon {
   outline: 1px solid #afb1b8;
-  border-radius: 4px;
   fill: #afb1b8;
+  border-radius: 4px;
+  height: 92px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.our-customers-icon:focus,
 .our-customers-icon:hover {
-  outline: 1px solid var(--webstudio-blue);
   fill: var(--webstudio-blue);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 1px solid var(--webstudio-blue);
+}
+.our-customers {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ====================== STOPKA ================= */
@@ -400,15 +421,24 @@ address a {
 .join-us-links li {
   padding-right: 10px;
 }
-.round-join-us-links {
+.social-links-link-join-us {
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
-  border-radius: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   fill: var(--main-white);
 }
-.round-join-us-links:hover,
-.round-join-us-links:focus {
+.round-social-links-join-us {
+  width: 20px;
+  height: 20px;
+
+  fill: var(--main-white);
+}
+.social-links-link-join-us:hover,
+.social-links-link-join-us:focus {
   background-color: var(--webstudio-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
