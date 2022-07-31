@@ -364,6 +364,7 @@ address a:focus,
 .our-customers-icon:hover {
   fill: var(--webstudio-blue);
   outline: 1px solid var(--webstudio-blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-customers {
   display: flex;
